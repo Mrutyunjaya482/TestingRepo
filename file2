@@ -1,2 +1,10 @@
 mvn test -P qa
 mvn package -P staging
+ <profiles>
+    <profile>
+      <id>qa</id>
+      <properties>
+        <env.name>QA</env.name>
+        <base.url>https://qa.example.com</base.url>
+      </properties>
+    </profile>
