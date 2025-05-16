@@ -1,0 +1,2 @@
+mvn test -P qa
+mvn package -P staging
